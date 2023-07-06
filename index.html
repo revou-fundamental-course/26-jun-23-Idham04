@@ -5,17 +5,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>E-Groceries</title>
     <link rel="stylesheet" href="CSS/style.css"/>
-</head>
 <body>
     <header>
         <section>
          <!-- headernavigation -->
          <nav>
-            <div class="headernavbar"><a href="">LOGO</a></div>
+            <div class="headernavbar"><img src="assests/moqups.png" width="90px" height="50px"></div>
             <div class="flex-container">
-                <div><a href="">HOME</a></div>
-                <div><a href="">Our Package</a></div>
-                <div><a href="">Call US</a></div>
+                <div><a href="#" class="a-navbar">HOME</a></div>
+                <div><a href="#" class="a-navbar">Our Package</a></div>
+                <div><a href="" class="a-navbar">Call US</a></div>
             </div>
          </nav>
          <!-- headernavigation selesai  -->
@@ -32,10 +31,23 @@
             </article>
             <article class="form">
                     <h3>Contact Us</h3>
-                    <h6>Sales akan menghubungi anda 2 x 24 jam</h6>
+                    <p>Sales akan menghubungi anda 1 x 24 jam setelah data kami terima</p>
+                    <form class="formcontact" name="contact-form" onsubmit="return validateform()">
+                        <label for="full-name">Your Name:</label><br>
+                        <input type="text" name="full-name" placeholder="First and Last Name"><br>
+                        <label for="email">Email Address:</label><br>
+                        <input type="email" name="email" placeholder="example@gmail.com"><br>
+                        <label for="phone-contact">Phone Number:</label><br>
+                        <input type="text" name="phone-contact" placeholder="Your Number"><br>
+                        <label for="messages">What Are You Interested In?</label><br>
+                        <input type="messages" name="messages" placeholder="select option"><br>
+                        <button>SEND</button>
+                    </form>     
             </article>
             </div>
         </section>
     </main>
+    <script src="js/script.js"></script>
+</head>
 </body>
 </html>
